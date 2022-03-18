@@ -1,0 +1,375 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+}
+body {
+    background-color: #212226;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Balsamiq Sans", "Lemonada";
+}
+p {
+    font-family: "Balsamiq Sans", "Lemonada";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+}
+section 
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    overflow: hidden;
+}
+.greeting-section{
+    width: 100%;
+    height: 800px;
+}
+/* Home Section */
+.home{
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height:100vh;
+    top:50%;
+    left: 50%;
+    overflow: hidden;
+    background-color: #cabbe9;
+}
+
+.home-item{
+    width: auto;
+    height: auto;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.textbox-wrap{
+    min-width:500px;
+    position: relative;
+}
+.content-box{
+    display: flex;
+}
+
+img{
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100vh;
+}
+.textbox{
+    position:absolute;
+    min-height: 150px;
+    top:50vh;
+    margin-top: -150px;
+    vertical-align: middle;
+    padding:0 20px;
+}
+h1{
+    color:#fff;
+    font-weight: bold;
+    font-size: 50px;
+    word-spacing: 2px;
+}
+p{
+    color:#fff;
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: bold;
+}
+/* Carousel Css */
+.home-item .owl-dots{
+    visibility: hidden;
+}
+/* Greeting Section */
+.greeting{
+    min-width: 100%;
+    min-height: 800px;
+    background-color:#f4f2f7;
+    overflow: hidden;
+    
+}
+
+#greeting-img{
+    min-width: 600px;
+    min-height: 600px;
+    margin-right: 20px;
+    margin-left: -150px;
+    Transform:scale(0.8);
+    margin-left: auto;
+}
+.greeting-box{
+    min-height: 250px;
+    min-width: 600px;
+    margin-top: 275px;
+    padding:0 10px;
+}
+.greeting-box h1,.benefit h1{
+    color:#ae9cd3;
+    font-size: 70px;
+}
+.greeting-box p{
+    color:#b4afa5;
+    line-height: 25px;
+    margin-top: 25px;
+}
+#btn-learn-more{
+    margin-top: 25px;
+}
+
+/* Benefit Section */
+.benefit-section{
+    width: 100%;
+    height: 100%;
+    display: inline;
+}
+.benefit
+{
+    width: auto;
+    height: auto;
+    min-height: 100%;
+    background-color:#fff;
+}
+.benefit h1{
+    text-align: center;
+    margin-top: 90px;
+}
+.benefit p{
+    color:#b4afa5;
+    width:300px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+#img-pose{
+    width:auto;
+    min-height:auto;
+}
+#last-row-pose{
+    height: 90px;
+}
+
+/* Footer Section */
+.contact-section{
+    width: 100%;
+    height: auto;
+}
+.social{
+          width: 20%;
+          height: 70px;
+          margin-left: auto;
+}
+
+ul.social-list li{
+    display: inline-block;
+    padding:0;
+    padding-top: 30px;
+    padding-right: 5px;
+}
+ul.social-list li a{
+    border: 1px solid #fff;
+    width:35px;
+    height: 35px;
+    line-height: 35px;
+    color:#fff;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 20px;
+    background-color: #f19378;
+    text-align: center;
+}
+ul.social-list li a:hover,
+ul.social-list li a:focus {
+    color: #fff;
+    background-color: #e66c4a;
+    transition: 1s;
+
+}
+
+.footer{
+    height: 50px;
+    background-color: rgb(166, 164, 168);
+    padding-top: 20px;
+    position: relative;
+    /* margin-top: -9%; */
+}
+
+/* Responsive */
+
+/* Extra small devices (phones, 600px and down) */
+
+
+@media screen and (max-width: 0px), 
+screen and (max-height: 400px) {
+html{
+    display: none;
+}
+}
+
+@media screen and (max-width: 768px), 
+screen and (max-height: 400px)
+     /* and (max-height:600px) */
+   {
+    .benefit h1
+    {
+        font-size: 2em;
+    }
+    .content-box
+    {
+        display: block;
+    }
+    .greeting-section
+    {
+        background-color:#f4f2f7;
+        
+    }
+    #greeting-img
+    {
+        width: 100px;
+        min-height: auto;
+        Transform:scale(0.4);
+        margin-right: 10px;
+        margin-left: -100px;
+        margin-top: -150px;
+       
+    }
+    .greeting-box
+    {
+        min-height: 50px;
+        min-width: 80px;
+        margin-top: -190px;
+        display: block;
+        
+    }
+    .greeting-box h1,.benefit h1
+    {
+        color:#ae9cd3;
+        font-size: 30px;
+    }
+    .greeting-box p
+    {
+        color:#b4afa5;
+        line-height: 25px;
+        margin-top: 10px;
+        word-wrap: break-word;
+    }
+    #btn-learn-more
+    {
+        margin-top: 5px;
+    }
+    .benefit
+    {
+    width: auto;
+    height: auto;
+    min-height: 100%;
+    margin-top: -140px;
+    }
+    .benefit h1
+    {
+    text-align: center;
+    margin-top: 50px;
+    }
+    .contact-section{
+        width: 100%;
+        height: auto;
+    
+    }
+
+    .social
+    {
+       width: 30%;
+       height: 70px;
+       margin-left: auto;
+    }
+    
+    ul.social-list li{
+        display: inline-block;
+        padding:0;
+        padding-top: 30px;
+        padding-right: 5px;
+    }
+    ul.social-list li a{
+        border: 1px solid #fff;
+        width:35px;
+        height: 35px;
+        line-height: 35px;
+        color:#fff;
+        display: inline-block;
+        border-radius: 50%;
+        font-size: 20px;
+        background-color: #f19378;
+        text-align: center;
+    }
+    ul.social-list li a:hover,
+    ul.social-list li a:focus {
+        color: #fff;
+        background-color: #e66c4a;
+        transition: 1s;
+    
+    }
+
+    .footer{
+        height: 50px;
+        background-color: rgb(166, 164, 168);
+        padding-top: 20px;
+        position: relative;
+        /* margin-top: -9%; */
+    }  
+}
+@media (min-width: 768px) and (max-width: 992px){
+    .benefit h1{
+        font-size: 2em;
+    }
+    .content-box{
+        display: block;
+    }
+    
+    #greeting-img{
+        width: 100px;
+        Transform:scale(0.5);
+        margin-right: 20px;
+        margin-left: -150px;
+        margin-top: -90px;
+    }
+    
+    .greeting-box h1,.benefit h1
+    {
+        color:#ae9cd3;
+        font-size: 50px;
+    }
+    .greeting-box
+    {
+        min-height: 50px;
+        min-width: 80px;
+        margin-top: -150px;
+        display: block;
+    }
+    .greeting
+    {
+        width: auto;
+        height: auto;
+        overflow: hidden;
+    }
+    .greeting-section
+    {
+        background-color:#f4f2f7;
+      
+    }
+    .greeting-box p
+    {
+        color:#b4afa5;
+        line-height: 25px;
+        margin-top: 10px;
+        word-wrap: break-word;
+    }
+}
